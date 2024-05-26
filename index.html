@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shole Zard</title>
+    <style>
+      body {
+        background-color: rgb(154, 148, 148);
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(185, 173, 43);
+        border: 1px solid gold;
+        font-size: 50px;
+        border-radius: 2px;
+        margin: auto;
+        padding: auto;
+        background-color: rgb(64, 69, 58);
+        font-weight: bold;
+      }
+      h2 {
+        text-align: center;
+        color: rgb(56, 63, 66);
+        font-weight: normal;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        border-radius: 12px;
+        margin: auto;
+        padding: auto;
+      }
+      p {
+        text-align: center;
+      }
+      .site {
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: auto;
+        padding: auto;
+        color: rgb(43, 43, 49);
+        box-shadow: 2px 1px 2px 1px rgb(93, 66, 88);
+        transition: all 200ms ease-in-out;
+        background: whitesmoke;
+        font-size: 20px;
+      }
+      button:hover {
+        opacity: 0.2;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      &#x1F958;
+      <strong>
+        <em>Shole Zard</em>
+      </strong>
+    </h1>
+    <br />
+    <h2>Persian saffron rice pudding</h2>
+    <hr />
+    <img
+      src="https://saednews.com/storage/media-center/images/__en__ac-image-T91608644156xc.jpeg"
+      width="20%"
+    />
+    <p>
+      <strong> Persian saffron rice pudding </strong>or
+      <strong> Shole Zard</strong> is a very popular meal in Iranian cuisine.<br />
+      it is commmonly served as dessert or an evening meal.<br />
+      The mian ingredients for persian saffron rice pudding are rice,sugar,
+      safrron, and rosewater. <br />cinnamon and nuts are used to garnish shole
+      zard, this is to balance the cold nature of rice.<br />This pudding is
+      high on nutritional values.<br />Because of the saffron, Shole Zard can be
+      a mood and energy booster.<br />
+      Rice is also a good source of vitamins and fibers.
+    </p>
+    <p id="test"></p>
+
+    <button onclick="showMessage();">would you like to try some?</button>
+
+    <p>coded by Mehrnaz Sadeghian <br /></p>
+    <a
+      class="site"
+      href="http://www.persianfoodtours.com/persian-saffron-rice-pudding/"
+      target="_blank"
+    >
+      please visit this site</a
+    >
+    <script>
+      function showMessage() {
+        let name = prompt(" what is your name?");
+        alert("Hello" + name + " please try Shole Zard");
+        document.getElementById("test").innerHTML =
+          "Hi" + name + " please try Shole Zard";
+      }
+      function Hi() {
+        let name = prompt(" what is your name?");
+        let like = prompt("do you have a sweet tooth?");
+        if (like === yes) {
+          alert("Hi" + name + "hope you enjoy Shole Zard");
+        }
+        if (like === no) {
+          alert("Hi" + name + "thank you for reading the text");
+        }
+
+        alert("Hi" + name + " please try Shole Zard");
+
+        let contactbutton = document.querySelector("button");
+        contactbutton.addEventListener("click,Hi");
+      }
+    </script>
+  </body>
+</html>
